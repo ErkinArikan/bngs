@@ -1,0 +1,79 @@
+/* body{
+    background: url('./bngsTek2.jpeg') rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+body{
+    background: linear-gradient(300deg, #d0e4eb, #c2c6da, #b6dcd9);
+}
+.gradient-background {
+	background: linear-gradient(300deg, #d0e4eb, #c2c6da, #b6dcd9);
+	background-size: 180% 180%;
+	animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+  .mybgColor{
+	background-color:#f8f9fa;
+  }
+  
+.bacSize{
+	
+
+	height: 100vh;
+
+}
+
+/*  side bar renk geçişleri burdan responsiv şekilde  */
+@media(max-width: 991px){
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
+
+/* underline hover buradan aşşağısı */ 
+.nav-link{
+    
+    position: relative;
+}
+.nav-link:hover{
+    /* text-decoration: underline; */
+    /* border-bottom: 2px solid greenyellow; */
+}
+.nav-link::after{
+    content: '';
+    opacity: 0;
+    transition:  all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(104, 122, 211);
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+.nav-link:hover::after{
+   
+    opacity: 1;
+    
+}
+
+.myIcon:hover{
+
+	transform: scale(1.03);
+}
+span{
+    color: rgb(179, 103, 103);
+}
